@@ -1,0 +1,16 @@
+title: Free Admission Help
+description: Expert college admissions guidance — personalized, free, and accessible to everyone.
+baseurl: ""
+url: "https://stephenkantimahanty.github.io"
+
+# Build settings
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
