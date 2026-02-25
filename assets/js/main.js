@@ -11,29 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }, { passive: true });
 
-  /* ── Active nav link highlighting ── */
-  var sections = document.querySelectorAll('section[id]');
-  var navLinks = document.querySelectorAll('.nav-links a');
-
-  function setActiveLink() {
-    var scrollY = window.pageYOffset;
-    sections.forEach(function (section) {
-      var sectionTop = section.offsetTop - 90;
-      var sectionHeight = section.offsetHeight;
-      var id = section.getAttribute('id');
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        navLinks.forEach(function (link) {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + id) {
-            link.classList.add('active');
-          }
-        });
-      }
-    });
-  }
-
-  window.addEventListener('scroll', setActiveLink, { passive: true });
-
   /* ── Mobile nav toggle ── */
   var navToggle = document.getElementById('navToggle');
   var navLinksList = document.getElementById('navLinks');
