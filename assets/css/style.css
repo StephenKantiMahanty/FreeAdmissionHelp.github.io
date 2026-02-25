@@ -703,6 +703,54 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 
+/* ---------- Subpage / Page Hero ---------- */
+.page-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 80px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--blue-50) 0%, var(--white) 60%, var(--blue-100) 100%);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.page-hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: var(--blue-900);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.7s ease 0.1s both;
+}
+
+.page-hero-title .highlight { color: var(--blue-600); }
+
+.page-hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--gray-500);
+  max-width: 540px;
+  margin: 0 auto;
+  animation: fadeInUp 0.7s ease 0.2s both;
+}
+
+/* ---------- Section CTA ---------- */
+.section-cta {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
 /* ---------- Footer ---------- */
 .footer {
   background: var(--blue-900);
